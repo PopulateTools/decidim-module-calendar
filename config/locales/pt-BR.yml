@@ -1,0 +1,51 @@
+pt-BR:
+  activemodel:
+    attributes:
+      external_event:
+        title: Título
+        start_at: Começa em
+        end_at: Termina em
+        url: Endereço eletrônico
+  decidim:
+    event_calendar:
+      admin:
+        actions:
+          new_external_event: Novo evento externo
+        external_events:
+          index:
+            title: Eventos externos
+            no_records_html: <p>Nenhum evento externo criado.</p> <p>Comece adicionando um evento externo a partir do botão "<a href="%{new_set_link}">%{button_name}</a>".</p>
+          create:
+            invalid: Evento externo inválido
+            success: Evento externo criado com sucesso
+          destroy:
+            success: Evento externo excluído com sucesso
+          edit:
+            save: Salvar evento externo
+          form:
+            title: Evento externo
+          new:
+            title: Novo evento externo
+            create: Criar evento externo
+          update:
+            invalid: Erro ao atualizar evento externo
+            success: Evento externo atualizado com sucesso
+        models:
+          external_events:
+            fields:
+              title: Título
+              start_at: Começa em
+              end_at: Termina em
+              url: Endereço eletrônico
+      index:
+        title: Calendário Global
+        filters:
+          consultation: Consultas
+          debate: Debates
+          external_event: Eventos externos
+          meeting: Reuniões
+          participatory_step: Processos Participativos
+      menu:
+        calendar: Calendário
+        gantt: Gráfico de Gantt
+        ical: Baixar ICAL
