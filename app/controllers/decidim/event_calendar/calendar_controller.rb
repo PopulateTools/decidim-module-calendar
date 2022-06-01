@@ -3,7 +3,6 @@
 module Decidim
   module EventCalendar
     class CalendarController < Decidim::EventCalendar::ApplicationController
-      include ParticipatorySpaceContext
       layout "calendar"
 
       def index

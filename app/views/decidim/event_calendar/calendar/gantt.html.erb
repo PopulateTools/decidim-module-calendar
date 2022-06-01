@@ -1,7 +1,7 @@
 <% provide :meta_title, t("event_calendar.menu.gantt", scope: "decidim") %>
-<%= participatory_space_wrapper do %>
+<div class="wrapper">
   <div class="row columns" style="overflow: auto;">
     <div id="gantt"></div>
   </div>
-<% end %>
+</div>
 <%= javascript_pack_tag "decidim_calendar_gantt" %>

@@ -1,6 +1,6 @@
 <% provide :meta_title, t("event_calendar.index.title", scope: "decidim") %>
 
-<%= participatory_space_wrapper do %>
+<div class="wrapper">
   <div class="row columns">
     <div class="calendar-filters button-group">
       <% @resources.each do |resource| %>
@@ -13,7 +13,7 @@
 
     <div id="calendar"></div>
   </div>
-<% end %>
+</div>
 
 <%= javascript_pack_tag "decidim_calendar" %>
 <%= stylesheet_pack_tag "decidim_calendar" %>
