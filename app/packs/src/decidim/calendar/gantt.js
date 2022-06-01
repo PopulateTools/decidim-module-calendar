@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function collect_tasks() {
-  fetch('/calendar/gantt/tasks')
+  fetch('/calendar/calendar/gantt/tasks')
     .then(function(response) {
       return response.json();
     })

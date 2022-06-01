@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // TODO: Improve from https://fullcalendar.io/docs/events-json-feed
 function collect_events() {
-  fetch('/calendar/events')
+  fetch('/calendar/calendar/events')
     .then(function(response) {
       return response.json();
     })

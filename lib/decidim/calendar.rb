@@ -8,3 +8,15 @@ module Decidim
   module EventCalendar
   end
 end
+
+Decidim.register_global_engine(
+  :decidim_calendar, # this is the name of the global method to access engine routes
+  ::Decidim::EventCalendar::Engine,
+  at: "/calendar"
+)
+
+Decidim.register_global_engine(
+  :decidim_admin_calendar, # this is the name of the global method to access engine routes
+  ::Decidim::EventCalendar::AdminEngine,
+  at: "/admin/calendar"
+)
