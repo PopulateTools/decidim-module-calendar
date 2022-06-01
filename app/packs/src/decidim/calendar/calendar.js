@@ -24,7 +24,7 @@ function collect_events() {
 }
 
 function render_calendar(events) {
-  var initialLocaleCode = 'pt-br';
+  var initialLocaleCode = document.documentElement.lang;
   var localeSelectorEl = document.getElementById('locale-selector');
   var calendarEl = document.getElementById('calendar');
 
@@ -74,7 +74,7 @@ function render_calendar(events) {
   calendar.getAvailableLocaleCodes().forEach(function(localeCode) {
     var optionEl = document.createElement('option');
     optionEl.value = localeCode;
-    optionEl.selected = localeCode == initialLocaleCode;
+    optionEl.selected = localeCode.toUpperCase() == initialLocaleCode.toUpperCase();
     optionEl.innerText = localeCode;
     localeSelectorEl.appendChild(optionEl);
   });
